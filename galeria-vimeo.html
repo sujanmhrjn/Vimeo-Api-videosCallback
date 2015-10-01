@@ -50,16 +50,14 @@
 			var ul = document.createElement('ul');
 			thumbs.appendChild(ul);
 			
-			//callback formato json 
+			//callback formato json
+			
 			console.log(videos)
 			
 			for (var i = 0; i < videos.length; i++) {
 			 
 				var thumb = document.createElement('img');
-
-				alert
-		 
-        thumb.setAttribute('src', videos[i].thumbnail_large);
+          			thumb.setAttribute('src', videos[i].thumbnail_large);
 				thumb.setAttribute('alt', videos[i].title);
 				thumb.setAttribute('title', videos[i].title);
 				
