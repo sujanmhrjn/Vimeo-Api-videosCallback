@@ -50,9 +50,14 @@
 			var ul = document.createElement('ul');
 			thumbs.appendChild(ul);
 			
+			//callback formato json 
+			console.log(videos)
+			
 			for (var i = 0; i < videos.length; i++) {
-				console.log(videos[i])
+			 
 				var thumb = document.createElement('img');
+
+				alert
 		 
         thumb.setAttribute('src', videos[i].thumbnail_large);
 				thumb.setAttribute('alt', videos[i].title);
@@ -89,7 +94,7 @@
 				
 				//player.vimeo.com/video/
 				// var video = videos[i].url.replace("vimeo.com/","player.vimeo.com/video/")
-				a.setAttribute('href', 'javascript:void(0)');
+				a.setAttribute('href',video);
 				a.appendChild(thumb);
 				var li = document.createElement('li'); 
 				li.appendChild(a);
